@@ -12,25 +12,39 @@ jQuery(document).ready(function($){
         WindowResize();
     });
 
+//-------------- For Menu
+
+$(".navbar-collapse a").click(function() {
+  //если она не имеет класс dropdown-toggle 
+  // Этот клас отвечает за пункты со стрелочкой
+  if (!$(this).hasClass("dropdown-toggle")) {
+    //то закрыть меню
+    $(".navbar-collapse").collapse('hide');
+  }
+});
+
 //Smooth Scroll
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 250);
-        return false;
-      }
-    }
-  });
+  // $('a[href*="#"]:not([href="#"])').click(function() {
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 250);
+  //       return false;
+  //     }
+  //   }
+  // });
 //Для табов------------+-------------------------+-------------------------+-------------------------+-------------
         // $('#myTab a').tab('show');
-        $('#myTab a').click(function (e) {
+        $('.myTab a').click(function (e) {
           e.preventDefault();
           $(this).tab('show');
         })
+
+
+        // $('.dropdown-toggle').dropdown();
 //Для табов------------+-------------------------+-------------------------+-------------------------+-------------
 
     // $(".tab_item").not(":first").hide();

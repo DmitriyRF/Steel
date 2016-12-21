@@ -382,6 +382,24 @@ body textarea:required:valid {
   color: green;
 }
 
+/* line 183, sass/main.scss */
+a {
+  color: #898989;
+  text-decoration: none;
+}
+/* line 186, sass/main.scss */
+a:hover {
+  color: #000;
+  text-decoration: none;
+  -o-transition: color .1s ease;
+  transition: color .1s ease;
+}
+/* line 192, sass/main.scss */
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
 /* line 198, sass/main.scss */
 *::-webkit-input-placeholder {
   color: #666;
@@ -425,7 +443,11 @@ input, a, img {
   display: none;
 }
 
-/* line 267, sass/main.scss */
+/* line 266, sass/main.scss */
+.heder {
+  display: block;
+}
+/* line 268, sass/main.scss */
 .heder .first-full-screan {
   min-height: 500px;
   background-repeat: no-repeat;
@@ -437,39 +459,39 @@ input, a, img {
   position: relative;
   width: 100%;
 }
-/* line 283, sass/main.scss */
+/* line 280, sass/main.scss */
 .heder .nav-phone-number {
   text-align: center;
   vertical-align: middle;
   line-height: 20px;
 }
 @media screen and (max-width: 992px) {
-  /* line 288, sass/main.scss */
+  /* line 285, sass/main.scss */
   .heder .nav li a {
     padding: 15px 7px;
   }
 }
-/* line 293, sass/main.scss */
+/* line 290, sass/main.scss */
 .heder .block-for-background {
   background-color: white;
   display: block;
   overflow: hidden;
   padding-bottom: 50px;
 }
-/* line 308, sass/main.scss */
+/* line 305, sass/main.scss */
 .heder .utp-wrapper {
   display: block;
   vertical-align: middle;
   padding: 30px;
   margin: 50px auto;
 }
-/* line 313, sass/main.scss */
+/* line 310, sass/main.scss */
 .heder .utp-wrapper .offer,
 .heder .utp-wrapper .offer small {
   color: black;
   font-weight: 600;
 }
-/* line 319, sass/main.scss */
+/* line 316, sass/main.scss */
 .heder .block-take-contacts {
   padding: 30px;
   max-width: 350px;
@@ -478,17 +500,17 @@ input, a, img {
   border: 1px solid black;
 }
 @media screen and (min-width: 1900px) {
-  /* line 319, sass/main.scss */
+  /* line 316, sass/main.scss */
   .heder .block-take-contacts {
     max-width: 500px;
   }
 }
-/* line 330, sass/main.scss */
+/* line 327, sass/main.scss */
 .heder .fa {
   min-width: 14px;
   min-height: 14px;
 }
-/* line 334, sass/main.scss */
+/* line 331, sass/main.scss */
 .heder .header_bottom_style {
   position: absolute;
   bottom: 0;
@@ -498,40 +520,40 @@ input, a, img {
   z-index: 99;
   background: url("../img/bottom_mask.png") no-repeat center top;
 }
-/* line 343, sass/main.scss */
+/* line 340, sass/main.scss */
 .heder .image-block {
   min-height: 200px;
   max-height: 350px;
   height: calc(100vh/3);
   margin: 4px -13px 0;
 }
-/* line 349, sass/main.scss */
+/* line 346, sass/main.scss */
 .heder .half-block {
   height: calc(50% - 2px);
 }
-/* line 352, sass/main.scss */
+/* line 349, sass/main.scss */
 .heder .image-block .half-block:first-child {
   margin-bottom: 4px;
 }
-/* line 355, sass/main.scss */
+/* line 352, sass/main.scss */
 .heder .whole-block {
   height: 100%;
 }
-/* line 359, sass/main.scss */
+/* line 356, sass/main.scss */
 .heder .whole-block, .heder .half-block {
   padding: 35px 19px 19px;
   position: relative;
 }
-/* line 363, sass/main.scss */
+/* line 360, sass/main.scss */
 .heder .whole-block a, .heder .half-block a {
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 367, sass/main.scss */
+/* line 364, sass/main.scss */
 .heder .h-tile-header {
   font-weight: 700;
 }
-/* line 373, sass/main.scss */
+/* line 370, sass/main.scss */
 .heder .i-tile-bg {
   background: no-repeat 50% 50%;
   background-size: cover;
@@ -542,22 +564,22 @@ input, a, img {
   left: 0px;
   z-index: 10;
 }
-/* line 383, sass/main.scss */
+/* line 380, sass/main.scss */
 .heder .i-tile-grad-color-green {
   background: -o-linear-gradient(top, rgba(37, 51, 10, 0.4) 0, rgba(37, 51, 10, 0) 100%), rgba(37, 51, 10, 0.4);
   background: linear-gradient(to bottom, rgba(37, 51, 10, 0.4) 0, rgba(37, 51, 10, 0) 100%), rgba(37, 51, 10, 0.4);
 }
-/* line 387, sass/main.scss */
+/* line 384, sass/main.scss */
 .heder .i-tile-grad-color-blue {
   background: -o-linear-gradient(top, rgba(10, 37, 51, 0.4) 0, rgba(10, 37, 51, 0) 100%), rgba(10, 37, 51, 0.4);
   background: linear-gradient(to bottom, rgba(10, 37, 51, 0.4) 0, rgba(10, 37, 51, 0) 100%), rgba(10, 37, 51, 0.4);
 }
-/* line 393, sass/main.scss */
+/* line 390, sass/main.scss */
 .heder .i-tile-grad-color-red {
   background: -o-linear-gradient(top, rgba(51, 10, 10, 0.4) 0, rgba(51, 10, 10, 0) 100%), rgba(51, 10, 10, 0.4);
   background: linear-gradient(to bottom, rgba(51, 10, 10, 0.4) 0, rgba(51, 10, 10, 0) 100%), rgba(51, 10, 10, 0.4);
 }
-/* line 397, sass/main.scss */
+/* line 394, sass/main.scss */
 .heder .i-tile-grad {
   display: block;
   position: absolute;
@@ -568,12 +590,12 @@ input, a, img {
   z-index: 11;
   opacity: 0;
 }
-/* line 408, sass/main.scss */
+/* line 405, sass/main.scss */
 .heder .whole-block:hover .i-tile-grad,
 .heder .half-block:hover .i-tile-grad {
   opacity: 1;
 }
-/* line 412, sass/main.scss */
+/* line 409, sass/main.scss */
 .heder .a-tile-main {
   padding: 39px 20px 10px;
   display: block;
@@ -584,117 +606,127 @@ input, a, img {
   left: 0;
   z-index: 12;
 }
-/* line 422, sass/main.scss */
+/* line 419, sass/main.scss */
 .heder .image-list {
   background-image: url("../img/heder/list.jpg");
 }
-/* line 425, sass/main.scss */
+/* line 422, sass/main.scss */
 .heder .image-armt {
   background-image: url("../img/heder/armt.png");
 }
-/* line 428, sass/main.scss */
+/* line 425, sass/main.scss */
 .heder .image-trub {
   background-image: url("../img/heder/trub.jpg");
 }
-/* line 431, sass/main.scss */
+/* line 428, sass/main.scss */
 .heder .image-balk {
   background-image: url("../img/heder/balk.jpg");
 }
-/* line 434, sass/main.scss */
+/* line 431, sass/main.scss */
 .heder .image-kvdr {
   background-image: url("../img/heder/kvdr.jpg");
 }
-/* line 437, sass/main.scss */
+/* line 434, sass/main.scss */
 .heder .image-plsa {
   background-image: url("../img/heder/plsa.jpeg");
 }
-/* line 440, sass/main.scss */
+/* line 437, sass/main.scss */
 .heder .image-uglk {
   background-image: url("../img/heder/uglk.jpg");
 }
-/* line 443, sass/main.scss */
+/* line 440, sass/main.scss */
 .heder .image-shvl {
   background-image: url("../img/heder/shvl.jpeg");
 }
-/* line 446, sass/main.scss */
+/* line 443, sass/main.scss */
 .heder .image-krug {
   background-image: url("../img/heder/krug.jpg");
 }
 
-/* line 450, sass/main.scss */
+/* line 447, sass/main.scss */
 .red {
   color: #f42908;
 }
 
-/* line 457, sass/main.scss */
+/* line 454, sass/main.scss */
+.hr-width {
+  max-width: 70%;
+  margin: 30px auto 10px;
+}
+
+/* line 458, sass/main.scss */
 .main {
   background-color: #f5f5f5;
   min-height: 1000px;
 }
-/* line 460, sass/main.scss */
+/* line 461, sass/main.scss */
 .main section {
   min-height: 500px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
-/* line 464, sass/main.scss */
+/* line 465, sass/main.scss */
 .main .head-of-table {
   font-weight: 800;
 }
-
 /* line 469, sass/main.scss */
+.main #steel .pricer-tab {
+  margin-top: 40px;
+  display: block;
+}
+/* line 473, sass/main.scss */
+.main #steel hr {
+  border-color: #333;
+}
+
+/* line 479, sass/main.scss */
 .footer {
   background-color: #696969;
   display: block;
   min-height: 500px;
 }
-/* line 473, sass/main.scss */
+/* line 483, sass/main.scss */
 .footer .google-map {
   display: block;
   height: 400px;
   width: 100%;
 }
-/* line 478, sass/main.scss */
-.footer .hr-width {
-  max-width: 70%;
-  margin: 30px auto 10px;
-}
-/* line 482, sass/main.scss */
+/* line 488, sass/main.scss */
 .footer .contact:hover .c-icon i {
   color: #f42908;
 }
-/* line 485, sass/main.scss */
+/* line 491, sass/main.scss */
 .footer .contact {
   display: block;
   min-height: 100px;
   padding: 10px 10px 25px;
   height: 100%;
 }
-/* line 491, sass/main.scss */
+/* line 497, sass/main.scss */
 .footer .c-icon {
   height: 30px;
   width: 30px;
   display: block;
   margin: 0 auto 5px;
 }
-/* line 496, sass/main.scss */
+/* line 502, sass/main.scss */
 .footer .c-icon i {
   color: #fff;
   width: 20px;
   text-align: center;
   font-size: 2em;
 }
-/* line 503, sass/main.scss */
+/* line 509, sass/main.scss */
 .footer .c-txt {
   display: block;
   height: 100%;
 }
-/* line 507, sass/main.scss */
+/* line 513, sass/main.scss */
 .footer .c-heder {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
-/* line 512, sass/main.scss */
+/* line 518, sass/main.scss */
 .footer .c-paragraph {
   color: #fff;
   text-align: center;

@@ -3,7 +3,7 @@
 <!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="ru">
+<html lang="ru"  id="main-top">
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
@@ -23,7 +23,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  START  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+-+- -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css"/>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css" />
@@ -34,7 +34,7 @@
 	<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-  END  STYLESHEET  -+-+-+-+-+-+-+-+-+-+-+-+-+- -->
 
 </head>
-<body class="site">
+<body class="site" data-spy="scroll" data-target=".navbar-example">
 	<div class="hidden"></div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
@@ -47,7 +47,7 @@
 	</div>
 	<!-- begin heder -->
 	<heder class="heder">		
-		<nav id="main-top" class="navbar navbar-default navbar-fixed-top js-transparent" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -57,7 +57,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand h-3" href="index.html">finegard</a>
+					<a class="navbar-brand h-3 hidden-xs " href="index.html">finegard</a>
+					<a class="navbar-brand h-3 visible-xs" href="index.html">fg</a>
 					<p class="navbar-text navbar-right visible-xs nav-phone-number h-5">
 						<a href="tel:+375336664164" class="navbar-link"><i class="fa fa-phone" aria-hidden="true"></i> +375 33 666-41-64</a>
 					</p>
@@ -65,7 +66,7 @@
 
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse navbar-example" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#main-top">Главная</a></li>
 						<li><a href="#steel">Металопродукция</a></li>
@@ -82,7 +83,7 @@
 				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
-		<div class="first-full-screan">
+		<div class="first-full-screan" >
 			<div class="container block-for-background">
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-md-8">
@@ -104,421 +105,634 @@
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="fa fa-phone-square" aria-hidden="true"></i></span>
-										<input type="tel" class="form-control" placeholder="Ваш телефон">
+											<input type="tel" class="form-control" placeholder="Ваш телефон">
+										</div>
 									</div>
+									<button type="submit" class="btn btn-default btn-block">Отправить</button>
+								</form>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-xs-12 col-md-6">
+							<div class="image-block">
+								<div class="whole-block">
+									<a class="a-tile-main" href="#">
+										<h2 class="h-tile-header">Лист</h2>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-list"></i>
+									<i class="i-tile-grad i-tile-grad-color-green"></i>
 								</div>
-								<button type="submit" class="btn btn-default btn-block">Отправить</button>
-							</form>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="col-xs-12 col-md-6">
-						<div class="image-block">
-							<div class="whole-block">
-								<a class="a-tile-main" href="#">
-									<h2 class="h-tile-header">Лист</h2>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-list"></i>
-								<i class="i-tile-grad i-tile-grad-color-green"></i>
 							</div>
 						</div>
-					</div>
-					<div class="clearfix visible-xs"></div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="whole-block">
-								<a class="a-tile-main" href="#">
-									<h3 class="h-tile-header">Арматура</h3>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-armt"></i>
-								<i class="i-tile-grad i-tile-grad-color-red"></i>
+						<div class="clearfix visible-xs"></div>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="whole-block">
+									<a class="a-tile-main" href="#">
+										<h3 class="h-tile-header">Арматура</h3>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-armt"></i>
+									<i class="i-tile-grad i-tile-grad-color-red"></i>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="half-block">
-								<a class="a-tile-main" href="#">
-									<h4 class="h-tile-header">Трубы</h4>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-trub"></i>
-								<i class="i-tile-grad i-tile-grad-color-blue"></i>
-							</div>
-							<div class="half-block">
-								<a class="a-tile-main" href="#">
-									<h4 class="h-tile-header">Балка</h4>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-balk"></i>
-								<i class="i-tile-grad i-tile-grad-color-green"></i>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="whole-block">
-								<a class="a-tile-main" href="#">
-									<h3 class="h-tile-header">Квадрат</h3>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-kvdr"></i>
-								<i class="i-tile-grad i-tile-grad-color-blue"></i>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="half-block">
+									<a class="a-tile-main" href="#">
+										<h4 class="h-tile-header">Трубы</h4>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-trub"></i>
+									<i class="i-tile-grad i-tile-grad-color-blue"></i>
+								</div>
+								<div class="half-block">
+									<a class="a-tile-main" href="#">
+										<h4 class="h-tile-header">Балка</h4>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-balk"></i>
+									<i class="i-tile-grad i-tile-grad-color-green"></i>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="whole-block">
-								<a class="a-tile-main" href="#">
-									<h3 class="h-tile-header">Полоса</h3>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-plsa"></i>
-								<i class="i-tile-grad i-tile-grad-color-red"></i>
+						<div class="clearfix"></div>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="whole-block">
+									<a class="a-tile-main" href="#">
+										<h3 class="h-tile-header">Квадрат</h3>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-kvdr"></i>
+									<i class="i-tile-grad i-tile-grad-color-blue"></i>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="clearfix visible-xs"></div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="half-block">
-								<a class="a-tile-main" href="#">
-									<h4 class="h-tile-header">Уголок</h4>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-uglk"></i>
-								<i class="i-tile-grad i-tile-grad-color-blue"></i>
-							</div>
-							<div class="half-block">
-								<a class="a-tile-main" href="#">
-									<h4 class="h-tile-header">Швеллер</h4>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-shvl"></i>
-								<i class="i-tile-grad i-tile-grad-color-green"></i>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="whole-block">
+									<a class="a-tile-main" href="#">
+										<h3 class="h-tile-header">Полоса</h3>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-plsa"></i>
+									<i class="i-tile-grad i-tile-grad-color-red"></i>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3">
-						<div class="image-block">
-							<div class="whole-block">
-								<a class="a-tile-main" href="#">
-									<h3 class="h-tile-header">Круг</h3>
-									<p></p>
-								</a>
-								<i class="i-tile-bg image-krug"></i>
-								<i class="i-tile-grad i-tile-grad-color-red"></i>
+						<div class="clearfix visible-xs"></div>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="half-block">
+									<a class="a-tile-main" href="#">
+										<h4 class="h-tile-header">Уголок</h4>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-uglk"></i>
+									<i class="i-tile-grad i-tile-grad-color-blue"></i>
+								</div>
+								<div class="half-block">
+									<a class="a-tile-main" href="#">
+										<h4 class="h-tile-header">Швеллер</h4>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-shvl"></i>
+									<i class="i-tile-grad i-tile-grad-color-green"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<div class="image-block">
+								<div class="whole-block">
+									<a class="a-tile-main" href="#">
+										<h3 class="h-tile-header">Круг</h3>
+										<p></p>
+									</a>
+									<i class="i-tile-bg image-krug"></i>
+									<i class="i-tile-grad i-tile-grad-color-red"></i>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>	
-			<div class="header_bottom_style"></div>	
-		</div>
-
+				</div>	
+				<div class="header_bottom_style"></div>	
+			</div>
 	</heder>
-	<!-- end heder -->
-	<!-- begin top_main -->
+		<!-- end heder -->
+<!-- begin top_main -->
 	<main class="main">
 		<section id="steel">
 			<div class="container"> 
 				<div class="row">
-					<div class="col-xs-12 col-md-8 col-md-offset-4">
-						<!-- Nav tabs -->
-						<ul class="nav nav-tabs" id="myTab">
-						  <li class="active"><a href="#home" data-toggle="tab">Листовой метал</a></li>
-						  <li><a href="#profile" data-toggle="tab">Арматура</a></li>
-						  <li><a href="#messages" data-toggle="tab">Круг/квадрат</a></li>
-						  <li><a href="#settings" data-toggle="tab">Шваллер/уголок/полоса</a></li>
-						</ul>
+					<div class="col-xs-12 col-md-9 col-md-offset-3">
+						<div class="pricer-tab">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs myTab">
+								<li class="dropdown active">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Листовой метал <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#home" data-toggle="tab">Лист горячекатаный</a></li>
+										<li><a href="#" data-toggle="tab">Лист г/к низколегированный</a></li>
+										<li><a href="#" data-toggle="tab">Лист горячекатаный рифленый</a></li>
+										<li><a href="#" data-toggle="tab">Лист холоднокатаный</a></li>
+										<li><a href="#" data-toggle="tab">Лист оцинкованный</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Арматура <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#profile" data-toggle="tab">Арматура А3 (А 500С)</a></li>
+										<li><a href="#" data-toggle="tab">Арматура А1 (А 240С)</a></li>
+									</ul>
+								</li>
+								<li><a href="#messages" data-toggle="tab">Круг</a></li>
+								<li><a href="#messages" data-toggle="tab">Квадрат</a></li>
+								<li><a href="#settings" data-toggle="tab">Шестигранник</a></li>
 
-						<!-- Tab panes -->
-						<div class="tab-content">
-						  <div class="tab-pane fade in active" id="home">						<div class="table-responsive">
-							<table class="table table-striped table-condensed table-hover">
-								<thead>
-									<h4 class="head-of-table">Листовой метал</h4>							 	
-									<tr>
-										<td>Наименование</td>
-										<td>Марка стали</td>
-										<td>Цена за 1тн</td>
-									</tr>
-								</thead>
-								<tbody>							 	
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-
-								</tbody>
-
-							</table>
-						</div></div>
-						  <div class="tab-pane fade" id="profile"						<div class="table-responsive">
-							<table class="table table-striped table-condensed table-hover">
-								<thead>
-									<h4 class="head-of-table">Листовой метал</h4>							 	
-									<tr>
-										<td>Наименование</td>
-										<td>Марка стали</td>
-										<td>Цена за 1тн</td>
-									</tr>
-								</thead>
-								<tbody>							 	
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-
-								</tbody>
-
-							</table>
-						</div></div>
-						  <div class="tab-pane fade" id="messages">						<div class="table-responsive">
-							<table class="table table-striped table-condensed table-hover">
-								<thead>
-									<h4 class="head-of-table">Листовой метал</h4>							 	
-									<tr>
-										<td>Наименование</td>
-										<td>Марка стали</td>
-										<td>Цена за 1тн</td>
-									</tr>
-								</thead>
-								<tbody>							 	
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-
-								</tbody>
-
-							</table>
-						</div></div>
-						  <div class="tab-pane fade" id="settings">						<div class="table-responsive">
-							<table class="table table-striped table-condensed table-hover">
-								<thead>
-									<h4 class="head-of-table">Листовой метал</h4>							 	
-									<tr>
-										<td>Наименование</td>
-										<td>Марка стали</td>
-										<td>Цена за 1тн</td>
-									</tr>
-								</thead>
-								<tbody>							 	
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-
-								</tbody>
-
-							</table>
-						</div></div>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="home">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4> 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>							 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="messages">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>							 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="settings">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 						</div>
-<!-- 						<div class="table-responsive">
-							<table class="table table-striped table-condensed table-hover">
-								<thead>
-									<h4 class="head-of-table">Листовой метал</h4>							 	
-									<tr>
-										<td>Наименование</td>
-										<td>Марка стали</td>
-										<td>Цена за 1тн</td>
-									</tr>
-								</thead>
-								<tbody>							 	
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td >1,5 (1,25х2,5)</td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-									<tr>
-										<td ></td>
-										<td >ст3пс/сп5</td>
-										<td >1 384</td>
-									</tr>
-
-								</tbody>
-
-							</table>
-						</div> -->
+					</div>
+					<div class="clearfix"></div>
+					<hr class="hr-width">
+					<div class="col-xs-12 col-md-9">
+						<div class="pricer-tab">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs myTab">
+								<li class="dropdown active">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Трубы <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#home" data-toggle="tab">Трубы водогазопроводные</a></li>
+										<li><a href="#" data-toggle="tab">Трубы бесшовные х/д</a></li>
+										<li><a href="#" data-toggle="tab">Трубы электросварные</a></li>
+										<li><a href="#" data-toggle="tab">Трубы профильные</a></li>
+									</ul>
+								</li>
+								<li><a href="#settings" data-toggle="tab">Швеллер</a></li>
+								<li><a href="#settings" data-toggle="tab">Уголок</a></li>
+								<li><a href="#settings" data-toggle="tab">Полоса</a></li>
+								<li><a href="#settings" data-toggle="tab">Балка</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="home">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4> 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>							 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="messages">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>							 	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="settings">						
+									<div class="table-responsive">
+										<table class="table table-striped table-condensed table-hover">
+											<thead>
+												<h4 class="head-of-table">Листовой метал</h4>	
+												<tr>
+													<td>Наименование</td>
+													<td>Марка стали</td>
+													<td>Цена за 1тн</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td >1,5 (1,25х2,5)</td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+												<tr>
+													<td ></td>
+													<td >ст3пс/сп5</td>
+													<td >1 384</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -549,7 +763,7 @@
 		<div class="clearfix"></div>
 		<div class="container">
 			<div class="row">
-			<hr class="hr-width">
+				<hr class="hr-width">
 				<div class="col-xs-6 col-sm-6 col-md-3">
 					<div class="contact">
 						<div class="c-icon">
@@ -615,6 +829,7 @@
 	<![endif]-->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 	<!-- Add bootstrap -->
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
