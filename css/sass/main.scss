@@ -163,7 +163,7 @@ html{
 	// overflow-x: hidden;
 }
 body{
-	font-family: "RalewayRegular", sans-serif;
+	font-family: "RobotoRegular", sans-serif;
 	// font-family: "Times New Roman", Times, serif;
 	font-weight: normal;
 	position: relative;
@@ -211,6 +211,8 @@ a{
 	color: #666;
 	opacity: 1;
 }
+
+
 
 // html.js .loader {
 // 	background: none repeat scroll 0 0 #ffffff;
@@ -287,6 +289,9 @@ input, a, img{
 			padding: 15px 7px;
 		}
 	}
+	#quastion-txt{
+		max-width: 100%;
+	}
 	.block-for-background{
 		background-color: rgba(255,255,255,1);
 		display: block;
@@ -345,16 +350,21 @@ input, a, img{
 	}
 	.half-block{
 		height: calc(50% - 2px);
+		.a-tile-main {
+			padding: 10px 8px 9px;
+		}
 	}
 	.image-block .half-block:first-child{
 		margin-bottom: 4px;
 	}
 	.whole-block{
 		height: 100%;
-	}
+		.a-tile-main {
+			padding: 18px 10px 10px;
+		}
+	} 
 	
 	.whole-block,.half-block{
-		padding: 35px 19px 19px;
 		position: relative;
 	}
 	.whole-block a, .half-block a{
@@ -362,7 +372,14 @@ input, a, img{
 		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
 	}	
 	.h-tile-header{
+		font-family: "RobotoBold", sans-serif;
 		font-weight: 700;
+		margin: 0 0 11px;
+	}
+	.p-tile-paragraph{
+		margin: 0;
+		width: 70%;
+
 	}
 	// .whole-block:hover,.half-block:hover{
 	// 	background-color: rgba(0,0,0,0.5);
@@ -378,18 +395,18 @@ input, a, img{
 		z-index: 10;
 	}
 	.i-tile-grad-color-green{
-    	background: -o-linear-gradient(top,rgba(37,51,10,.4)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
-    	background: linear-gradient(to bottom,rgba(37,51,10,.4)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
+    	background: -o-linear-gradient(top,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
+    	background: linear-gradient(to bottom,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
 	}
 	.i-tile-grad-color-blue{
 		
-    	background: -o-linear-gradient(top,rgba(10,37,51,.4)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
-    	background: linear-gradient(to bottom,rgba(10,37,51,.4)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
+    	background: -o-linear-gradient(top,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
+    	background: linear-gradient(to bottom,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
 
 	}
 	.i-tile-grad-color-red{
-		background: -o-linear-gradient(top,rgba(51,10,10,.4)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
-		background: linear-gradient(to bottom,rgba(51,10,10,.4)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
+		background: -o-linear-gradient(top,rgba(51,10,10,.5)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
+		background: linear-gradient(to bottom,rgba(51,10,10,.5)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
 	}
 	.i-tile-grad {
 	    display: block;
@@ -399,15 +416,13 @@ input, a, img{
 	    bottom: 0;
 	    left: 0;
 	    z-index: 11;
-	    opacity: 0;
-	    // filter: alpha(opacity=50);
+	    opacity: 0.4;
 	}
 	.whole-block:hover .i-tile-grad,
 	.half-block:hover .i-tile-grad{
 		opacity: 1;
 	}
 	.a-tile-main {
-	    padding: 39px 20px 10px;
 	    display: block;
 	    position: absolute;
 	    top: 0;
@@ -459,20 +474,41 @@ input, a, img{
 	background-color: #f5f5f5;
 	min-height: 1000px;
 	section{
-		min-height: 500px;
+		min-height: 400px;
 		padding-top: 30px;
+	}
+	hr{
+		border-color: #333;
 	}
 	.head-of-table{
 		font-weight: 800;
+		margin-left: 5px;
+	}
+	.heder-delivery{
+		margin: 40px auto 10px;
 	}
 	#steel{
 		.pricer-tab{
 			margin-top: 40px;
 			display: block;
 		}
-		hr{
-			border-color: #333;
+		.take-price{
+			display: block;
+			margin-top: 100px;
+			text-align: center;
+			vertical-align: middle;
+			.link-to-doc{
+				max-width: 40%;	
+				margin: 20px auto;	
+				display: block;		
+			}
+			img{
+				max-width: 100%;
+				max-height: 300px;
+			}
 		}
+	}
+	#delivery{
 	}
 
 }
@@ -519,6 +555,19 @@ input, a, img{
 		color: #fff;
 		text-align: center;
 	}
+}
+.button{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 // finegard2000@yandex.ru{fine2000}
 // Наименование	Маркастали	Цена за 1тн с НДС

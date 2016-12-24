@@ -38,10 +38,23 @@ $(".navbar-collapse a").click(function() {
   // });
 //Для табов------------+-------------------------+-------------------------+-------------------------+-------------
         // $('#myTab a').tab('show');
+        
+        $(".js-tab-image-group .a-tile-main").click(function(event) {
+            event.preventDefault();
+            var target_href = $(this).attr('href');
+            // target_href = target_href.substring(1);
+            var element = $('a[href="'+target_href+'"]').parents(".pricer-tab");
+            $.scrollTo(element, 1500, {margin:true, offset:-50});
+            $('a[href="'+target_href+'"]').tab('show');
+        });
+
+
         $('.myTab a').click(function (e) {
           e.preventDefault();
           $(this).tab('show');
-        })
+        });
+
+        // $(...).scrollTo('li:eq(15)', 2500, {easing:'elasout'});
 
 
         // $('.dropdown-toggle').dropdown();
