@@ -565,13 +565,10 @@ input, a, img {
   font-family: "RobotoBold", sans-serif;
   font-weight: 700;
   margin: 0 0 11px;
+  display: block;
+  position: relative;
 }
-/* line 379, sass/main.scss */
-.heder .p-tile-paragraph {
-  margin: 0;
-  width: 70%;
-}
-/* line 387, sass/main.scss */
+/* line 384, sass/main.scss */
 .heder .i-tile-bg {
   background: no-repeat 50% 50%;
   background-size: cover;
@@ -582,22 +579,22 @@ input, a, img {
   left: 0px;
   z-index: 10;
 }
-/* line 397, sass/main.scss */
+/* line 394, sass/main.scss */
 .heder .i-tile-grad-color-green {
   background: -o-linear-gradient(top, rgba(37, 51, 10, 0.5) 0, rgba(37, 51, 10, 0) 100%), rgba(37, 51, 10, 0.4);
   background: linear-gradient(to bottom, rgba(37, 51, 10, 0.5) 0, rgba(37, 51, 10, 0) 100%), rgba(37, 51, 10, 0.4);
 }
-/* line 401, sass/main.scss */
+/* line 398, sass/main.scss */
 .heder .i-tile-grad-color-blue {
   background: -o-linear-gradient(top, rgba(10, 37, 51, 0.5) 0, rgba(10, 37, 51, 0) 100%), rgba(10, 37, 51, 0.4);
   background: linear-gradient(to bottom, rgba(10, 37, 51, 0.5) 0, rgba(10, 37, 51, 0) 100%), rgba(10, 37, 51, 0.4);
 }
-/* line 407, sass/main.scss */
+/* line 402, sass/main.scss */
 .heder .i-tile-grad-color-red {
   background: -o-linear-gradient(top, rgba(51, 10, 10, 0.5) 0, rgba(51, 10, 10, 0) 100%), rgba(51, 10, 10, 0.4);
   background: linear-gradient(to bottom, rgba(51, 10, 10, 0.5) 0, rgba(51, 10, 10, 0) 100%), rgba(51, 10, 10, 0.4);
 }
-/* line 411, sass/main.scss */
+/* line 406, sass/main.scss */
 .heder .i-tile-grad {
   display: block;
   position: absolute;
@@ -608,12 +605,12 @@ input, a, img {
   z-index: 11;
   opacity: 0.4;
 }
-/* line 421, sass/main.scss */
+/* line 416, sass/main.scss */
 .heder .whole-block:hover .i-tile-grad,
 .heder .half-block:hover .i-tile-grad {
   opacity: 1;
 }
-/* line 425, sass/main.scss */
+/* line 420, sass/main.scss */
 .heder .a-tile-main {
   display: block;
   position: absolute;
@@ -623,156 +620,269 @@ input, a, img {
   left: 0;
   z-index: 12;
 }
-/* line 434, sass/main.scss */
+/* line 429, sass/main.scss */
+.heder .p-tile-paragraph {
+  margin: 0;
+  width: 70%;
+  display: block;
+  position: relative;
+}
+/* line 436, sass/main.scss */
+.heder .p-tile-paragraph .inner-link:hover {
+  text-decoration: underline;
+}
+/* line 441, sass/main.scss */
 .heder .image-list {
   background-image: url("../img/heder/list.jpg");
 }
-/* line 437, sass/main.scss */
+/* line 444, sass/main.scss */
 .heder .image-armt {
   background-image: url("../img/heder/armt.png");
 }
-/* line 440, sass/main.scss */
+/* line 447, sass/main.scss */
 .heder .image-trub {
   background-image: url("../img/heder/trub.jpg");
 }
-/* line 443, sass/main.scss */
+/* line 450, sass/main.scss */
 .heder .image-balk {
   background-image: url("../img/heder/balk.jpg");
 }
-/* line 446, sass/main.scss */
+/* line 453, sass/main.scss */
 .heder .image-kvdr {
   background-image: url("../img/heder/kvdr.jpg");
 }
-/* line 449, sass/main.scss */
+/* line 456, sass/main.scss */
 .heder .image-plsa {
   background-image: url("../img/heder/plsa.jpeg");
 }
-/* line 452, sass/main.scss */
+/* line 459, sass/main.scss */
 .heder .image-uglk {
   background-image: url("../img/heder/uglk.jpg");
 }
-/* line 455, sass/main.scss */
+/* line 462, sass/main.scss */
 .heder .image-shvl {
   background-image: url("../img/heder/shvl.jpeg");
 }
-/* line 458, sass/main.scss */
+/* line 465, sass/main.scss */
 .heder .image-krug {
   background-image: url("../img/heder/krug.jpg");
 }
 
-/* line 462, sass/main.scss */
+/* line 469, sass/main.scss */
 .red {
   color: #f42908;
 }
 
-/* line 469, sass/main.scss */
+/* line 476, sass/main.scss */
 .hr-width {
   max-width: 70%;
-  margin: 30px auto 10px;
+  max-width: 60vw;
+  margin: 20px auto 40px;
 }
 
-/* line 473, sass/main.scss */
-.main {
-  background-color: #f5f5f5;
-  min-height: 1000px;
+/* line 481, sass/main.scss */
+.heder-of-section {
+  margin: 40px auto;
+  text-align: center;
 }
-/* line 476, sass/main.scss */
+
+/* line 485, sass/main.scss */
+.main {
+  min-height: 1000px;
+  background-color: #696969;
+}
+/* line 488, sass/main.scss */
 .main section {
   min-height: 400px;
-  padding-top: 30px;
+  padding: 30px 0 80px;
+  background-color: #f5f5f5;
 }
-/* line 480, sass/main.scss */
+/* line 493, sass/main.scss */
 .main hr {
   border-color: #333;
 }
-/* line 483, sass/main.scss */
+/* line 496, sass/main.scss */
 .main .head-of-table {
   font-weight: 800;
   margin-left: 5px;
 }
-/* line 487, sass/main.scss */
-.main .heder-delivery {
-  margin: 40px auto 10px;
-}
-/* line 491, sass/main.scss */
-.main #steel .pricer-tab {
+/* line 500, sass/main.scss */
+.main .pricer-tab {
   margin-top: 40px;
   display: block;
 }
-/* line 495, sass/main.scss */
+/* line 505, sass/main.scss */
 .main #steel .take-price {
   display: block;
   margin-top: 100px;
   text-align: center;
   vertical-align: middle;
 }
-/* line 500, sass/main.scss */
+/* line 510, sass/main.scss */
 .main #steel .take-price .link-to-doc {
   max-width: 40%;
   margin: 20px auto;
   display: block;
 }
-/* line 505, sass/main.scss */
+/* line 515, sass/main.scss */
 .main #steel .take-price img {
   max-width: 100%;
   max-height: 300px;
 }
+/* line 521, sass/main.scss */
+.main .i-tile-bg {
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+/* line 531, sass/main.scss */
+.main .i-tile-grad {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  opacity: 0.4;
+}
+/* line 541, sass/main.scss */
+.main .image-block-line {
+  min-height: 130px;
+  margin: 1px -14px 0;
+  max-height: 200px;
+  height: calc(100vh/7);
+}
+/* line 546, sass/main.scss */
+.main .image-block-line:hover .i-tile-grad {
+  opacity: 0.8;
+}
+/* line 550, sass/main.scss */
+.main .image-block-line .wrapper-rel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 556, sass/main.scss */
+.main .a-tile-main {
+  color: #fff;
+  display: block;
+  position: absolute;
+  padding: 10px 9px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+}
+/* line 567, sass/main.scss */
+.main .i-tile-grad-color-black {
+  background: -o-linear-gradient(top, black 0, transparent 100%);
+  background: linear-gradient(to bottom, black 0, transparent 100%);
+}
+/* line 571, sass/main.scss */
+.main .h-tile-header {
+  font-family: "RobotoBold", sans-serif;
+  font-weight: 700;
+  margin: 0 0 6px;
+  display: block;
+  position: relative;
+}
+/* line 578, sass/main.scss */
+.main .p-tile-paragraph {
+  margin: 0;
+  width: 70%;
+  display: block;
+  position: relative;
+}
+/* line 585, sass/main.scss */
+.main .image-auto-1 {
+  background-image: url("../img/auto-1.jpg");
+}
+/* line 588, sass/main.scss */
+.main .image-auto-2 {
+  background-image: url("../img/auto-2.jpg");
+}
+/* line 591, sass/main.scss */
+.main .image-auto-3 {
+  background-image: url("../img/auto-3.jpg");
+}
+/* line 594, sass/main.scss */
+.main .image-auto-4 {
+  background-image: url("../img/auto-4.jpg");
+}
+/* line 597, sass/main.scss */
+.main .for-margin {
+  margin-top: 60px;
+}
+/* line 600, sass/main.scss */
+.main #delivery {
+  border-bottom-right-radius: 70% 70px;
+  border-bottom-left-radius: 70% 70px;
+}
 
-/* line 515, sass/main.scss */
+/* line 606, sass/main.scss */
 .footer {
   background-color: #696969;
   display: block;
   min-height: 500px;
+  padding: 30px 0 10px;
+  color: #fff;
 }
-/* line 519, sass/main.scss */
+/* line 612, sass/main.scss */
 .footer .google-map {
   display: block;
   height: 400px;
   width: 100%;
+  margin: 30px 0;
 }
-/* line 524, sass/main.scss */
+/* line 618, sass/main.scss */
 .footer .contact:hover .c-icon i {
   color: #f42908;
 }
-/* line 527, sass/main.scss */
+/* line 621, sass/main.scss */
 .footer .contact {
   display: block;
   min-height: 100px;
   padding: 10px 10px 25px;
   height: 100%;
 }
-/* line 533, sass/main.scss */
+/* line 627, sass/main.scss */
 .footer .c-icon {
   height: 30px;
   width: 30px;
   display: block;
   margin: 0 auto 5px;
 }
-/* line 538, sass/main.scss */
+/* line 632, sass/main.scss */
 .footer .c-icon i {
-  color: #fff;
   width: 20px;
   text-align: center;
   font-size: 2em;
 }
-/* line 545, sass/main.scss */
+/* line 638, sass/main.scss */
 .footer .c-txt {
   display: block;
   height: 100%;
 }
-/* line 549, sass/main.scss */
+/* line 642, sass/main.scss */
 .footer .c-heder {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
-/* line 554, sass/main.scss */
+/* line 647, sass/main.scss */
 .footer .c-paragraph {
   color: #fff;
   text-align: center;
 }
 
-/* line 559, sass/main.scss */
+/* line 652, sass/main.scss */
 .button {
   display: block;
   text-align: center;

@@ -62,36 +62,36 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 /*Задержка анимации*/
 @mixin my-animation-delay($func_var_animation_delay){
 	-webkit-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-moz-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-ms-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	-o-animation-delay: $func_var_animation_delay; /*задержка анимации*/
-  	animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-moz-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-ms-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	-o-animation-delay: $func_var_animation_delay; /*задержка анимации*/
+	animation-delay: $func_var_animation_delay; /*задержка анимации*/
 }
 /*Количество итераций анимации*/
 @mixin my-animation-iteration-count($func_var_iteration_count){
 	-webkit-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-moz-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-ms-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	-o-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
-  	animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-moz-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-ms-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	-o-animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
+	animation-iteration-count: $func_var_iteration_count; /*Количество итераций*/
 }
 /*продолжительность анимации*/
 /*infinite*/
 @mixin my-animation-duration($func_var_animation_duration){
 	-webkit-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-moz-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-ms-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	-o-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
-  	animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-moz-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-ms-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	-o-animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
+	animation-duration: $func_var_animation_duration; /*продолжительность анимации*/
 }
 /*Временная функция анимации*/
 /*ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), step-start, step-end, steps(количество шагов,start|end)*/
 @mixin my-animation-timing-function($func_var_animation_timing_function){
 	-webkit-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-moz-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-ms-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	-o-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
-  	animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-moz-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-ms-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	-o-animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
+	animation-timing-function: $func_var_animation_timing_function; /*продолжительность анимации*/
 }
 /*Направление анимации*/
 /*alternate,  alternate-reverse, normal, reverse*/
@@ -117,13 +117,13 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 	$func_animation_timing_function, $func_animation_delay,
 	$func_animation_iteration_count, $func_animation_direction){
 	@each $pref in -webkit-, -moz-, -o-, -ms-{
-    	#{$pref}animation: $func_animation_name $func_animation_duration
+		#{$pref}animation: $func_animation_name $func_animation_duration
 		$func_animation_timing_function $func_animation_delay
 		$func_animation_iteration_count $func_animation_direction;
- 	}
- 	animation: $func_animation_name $func_animation_duration
-		$func_animation_timing_function $func_animation_delay
-		$func_animation_iteration_count $func_animation_direction;
+	}
+	animation: $func_animation_name $func_animation_duration
+	$func_animation_timing_function $func_animation_delay
+	$func_animation_iteration_count $func_animation_direction;
 }//@include  my-animation( run, 2s, liner, 0s, 1, normal)
 /*Кнопка*/
 @mixin my-button(){
@@ -131,8 +131,8 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 	/*Градиент*/
 	// @include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%));//bourbon mixin
 	@include my-box-shadow(0 0 1px rgba(255,255,255,.2) inset,0 3px 5px rgba(0,1,6,.5));
- 	&:hover:not(:disabled){
- 		top: -0.1em;
+	&:hover:not(:disabled){
+		top: -0.1em;
 		left: -0.1em;
 		@include my-box-shadow(0 0 2px rgba(255,255,255,.3) inset,0 4px 6px rgba(0,1,6,.6));
 	}
@@ -145,9 +145,9 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 	
 }
 @mixin my-box-shadow($arg...){
-		-webkit-box-shadow: $arg;
-		-moz-box-shadow: $arg;
-		box-shadow: $arg;
+	-webkit-box-shadow: $arg;
+	-moz-box-shadow: $arg;
+	box-shadow: $arg;
 }
 
 .inline-block {
@@ -334,13 +334,13 @@ input, a, img{
 		min-height: 14px;
 	}
 	.header_bottom_style{
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 27px;
-	    z-index: 99;
-	    background: url("../img/bottom_mask.png") no-repeat center top;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 27px;
+		z-index: 99;
+		background: url("../img/bottom_mask.png") no-repeat center top;
 	}
 	.image-block{
 		min-height: 200px;
@@ -375,11 +375,8 @@ input, a, img{
 		font-family: "RobotoBold", sans-serif;
 		font-weight: 700;
 		margin: 0 0 11px;
-	}
-	.p-tile-paragraph{
-		margin: 0;
-		width: 70%;
-
+		display: block;
+		position: relative;
 	}
 	// .whole-block:hover,.half-block:hover{
 	// 	background-color: rgba(0,0,0,0.5);
@@ -395,41 +392,51 @@ input, a, img{
 		z-index: 10;
 	}
 	.i-tile-grad-color-green{
-    	background: -o-linear-gradient(top,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
-    	background: linear-gradient(to bottom,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
+		background: -o-linear-gradient(top,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
+		background: linear-gradient(to bottom,rgba(37,51,10,.5)0,rgba(37,51,10,0)100%),rgba(37,51,10,.4);
 	}
 	.i-tile-grad-color-blue{
-		
-    	background: -o-linear-gradient(top,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
-    	background: linear-gradient(to bottom,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
-
+		background: -o-linear-gradient(top,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
+		background: linear-gradient(to bottom,rgba(10,37,51,.5)0,rgba(10,37,51,0)100%),rgba(10,37,51,.4);
 	}
 	.i-tile-grad-color-red{
 		background: -o-linear-gradient(top,rgba(51,10,10,.5)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
 		background: linear-gradient(to bottom,rgba(51,10,10,.5)0,rgba(51,10,10,0)100%),rgba(51,10,10,.4);
 	}
 	.i-tile-grad {
-	    display: block;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 11;
-	    opacity: 0.4;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 11;
+		opacity: 0.4;
 	}
 	.whole-block:hover .i-tile-grad,
 	.half-block:hover .i-tile-grad{
 		opacity: 1;
 	}
 	.a-tile-main {
-	    display: block;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 12;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 12;
+	}
+	.p-tile-paragraph{
+		margin: 0;
+		width: 70%;
+		display: block;
+		position: relative;
+		.inner-link{
+			// z-index: 14;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
 	}
 	.image-list{
 		background-image: url("../img/heder/list.jpg");
@@ -460,7 +467,7 @@ input, a, img{
 	}
 }
 .red{
-	    color: #f42908;
+	color: #f42908;
 }
 // .table-hover > tbody > tr:hover {
 //     background-color: #f42908;
@@ -468,14 +475,20 @@ input, a, img{
 // }
 .hr-width{
 	max-width: 70%;
-	margin: 30px auto 10px; 
+	max-width: 60vw;
+	margin: 20px auto 40px; 
+}
+.heder-of-section{
+	margin: 40px auto;
+	text-align: center;
 }
 .main{
-	background-color: #f5f5f5;
 	min-height: 1000px;
+	background-color: #696969;
 	section{
 		min-height: 400px;
-		padding-top: 30px;
+		padding: 30px 0 80px;
+		background-color: #f5f5f5;
 	}
 	hr{
 		border-color: #333;
@@ -484,14 +497,11 @@ input, a, img{
 		font-weight: 800;
 		margin-left: 5px;
 	}
-	.heder-delivery{
-		margin: 40px auto 10px;
+	.pricer-tab{
+		margin-top: 40px;
+		display: block;
 	}
 	#steel{
-		.pricer-tab{
-			margin-top: 40px;
-			display: block;
-		}
 		.take-price{
 			display: block;
 			margin-top: 100px;
@@ -508,7 +518,88 @@ input, a, img{
 			}
 		}
 	}
+	.i-tile-bg{
+		background: no-repeat 50% 50%;
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		z-index: 10;
+	}
+	.i-tile-grad{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 11;
+		opacity: 0.4;
+	}
+	.image-block-line{
+		min-height: 130px;
+    	margin: 1px -14px 0;
+    	max-height: 200px;
+    	height: calc(100vh/7);
+		&:hover .i-tile-grad{
+			opacity: 0.8;
+		}
+
+		.wrapper-rel{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.a-tile-main{
+		color: #fff;
+		display: block;
+		position: absolute;
+		padding: 10px 9px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 12;
+	}
+	.i-tile-grad-color-black{
+		background: -o-linear-gradient(top,rgb(0,0,0)0,rgba(0,0,0,0)100%);
+		background: linear-gradient(to bottom,rgb(0,0,0)0,rgba(0,0,0,0)100%);
+	}
+	.h-tile-header{
+		font-family: "RobotoBold", sans-serif;
+		font-weight: 700;
+		margin: 0 0 6px;
+		display: block;
+		position: relative;
+	}
+	.p-tile-paragraph{
+		margin: 0;
+		width: 70%;
+		// z-index: 13;
+		display: block;
+		position: relative;
+	}
+	.image-auto-1{
+		background-image: url("../img/auto-1.jpg");
+	}
+	.image-auto-2{
+		background-image: url("../img/auto-2.jpg");
+	}
+	.image-auto-3{
+		background-image: url("../img/auto-3.jpg");
+	}
+	.image-auto-4{
+		background-image: url("../img/auto-4.jpg");
+	}
+	.for-margin{
+		margin-top: 60px;
+	}
 	#delivery{
+		border-bottom-right-radius: 70% 70px;
+	    border-bottom-left-radius: 70% 70px;
 	}
 
 }
@@ -516,10 +607,13 @@ input, a, img{
 	background-color: #696969;
 	display: block;
 	min-height: 500px;
+	padding: 30px 0 10px;
+	color: #fff;
 	.google-map{
 		display: block;
 		height: 400px;
 		width: 100%;
+		margin: 30px 0;
 	}
 	.contact:hover .c-icon i{
 		color: #f42908;
@@ -536,7 +630,6 @@ input, a, img{
 		display: block;
 		margin: 0 auto 5px;
 		i{
-			color: #fff;
 			width: 20px;
 			text-align: center;
 			font-size: 2em;

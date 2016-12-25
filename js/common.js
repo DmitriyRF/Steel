@@ -39,7 +39,7 @@ $(".navbar-collapse a").click(function() {
 //Для табов------------+-------------------------+-------------------------+-------------------------+-------------
         // $('#myTab a').tab('show');
         
-        $(".js-tab-image-group .a-tile-main").click(function(event) {
+        $(".js-tab-image-group .a-tile-main, .js-tab-image-group .inner-link").click(function(event) {
             event.preventDefault();
             var target_href = $(this).attr('href');
             // target_href = target_href.substring(1);
