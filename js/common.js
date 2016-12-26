@@ -58,6 +58,15 @@ $(".navbar-collapse a").click(function() {
 
 
         // $('.dropdown-toggle').dropdown();
+            var today = new Date();
+            var yr = today.getFullYear();
+            var day = today.getUTCDate();
+            var month = today.getMonth();
+            // var rus_txt_month = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+            var rus_txt_month = [" января "," февраля "," марта "," апреля "," мая "," июня "," июля "," августа "," сентября "," октября "," ноября "," декабря "];
+            $(".js-year").html(yr);
+            $(".js-tomorrow").text(day + rus_txt_month[month] + yr + "г.");
+
 //Для табов------------+-------------------------+-------------------------+-------------------------+-------------
 
     // $(".tab_item").not(":first").hide();

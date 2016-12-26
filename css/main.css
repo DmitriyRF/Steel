@@ -711,25 +711,31 @@ input, a, img {
   margin-top: 40px;
   display: block;
 }
-/* line 505, sass/main.scss */
+/* line 504, sass/main.scss */
+.main .correctness-price {
+  float: right;
+  display: inline-block;
+  margin: 1px 0 2px;
+}
+/* line 510, sass/main.scss */
 .main #steel .take-price {
   display: block;
   margin-top: 100px;
   text-align: center;
   vertical-align: middle;
 }
-/* line 510, sass/main.scss */
+/* line 515, sass/main.scss */
 .main #steel .take-price .link-to-doc {
   max-width: 40%;
   margin: 20px auto;
   display: block;
 }
-/* line 515, sass/main.scss */
+/* line 520, sass/main.scss */
 .main #steel .take-price img {
   max-width: 100%;
   max-height: 300px;
 }
-/* line 521, sass/main.scss */
+/* line 526, sass/main.scss */
 .main .i-tile-bg {
   background: no-repeat 50% 50%;
   background-size: cover;
@@ -740,7 +746,7 @@ input, a, img {
   left: 0px;
   z-index: 10;
 }
-/* line 531, sass/main.scss */
+/* line 536, sass/main.scss */
 .main .i-tile-grad {
   display: block;
   position: absolute;
@@ -751,24 +757,24 @@ input, a, img {
   z-index: 11;
   opacity: 0.4;
 }
-/* line 541, sass/main.scss */
+/* line 546, sass/main.scss */
 .main .image-block-line {
   min-height: 130px;
   margin: 1px -14px 0;
   max-height: 200px;
   height: calc(100vh/7);
 }
-/* line 546, sass/main.scss */
+/* line 551, sass/main.scss */
 .main .image-block-line:hover .i-tile-grad {
   opacity: 0.8;
 }
-/* line 550, sass/main.scss */
+/* line 555, sass/main.scss */
 .main .image-block-line .wrapper-rel {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 556, sass/main.scss */
+/* line 561, sass/main.scss */
 .main .a-tile-main {
   color: #fff;
   display: block;
@@ -780,12 +786,12 @@ input, a, img {
   left: 0;
   z-index: 12;
 }
-/* line 567, sass/main.scss */
+/* line 572, sass/main.scss */
 .main .i-tile-grad-color-black {
   background: -o-linear-gradient(top, black 0, transparent 100%);
   background: linear-gradient(to bottom, black 0, transparent 100%);
 }
-/* line 571, sass/main.scss */
+/* line 576, sass/main.scss */
 .main .h-tile-header {
   font-family: "RobotoBold", sans-serif;
   font-weight: 700;
@@ -793,40 +799,35 @@ input, a, img {
   display: block;
   position: relative;
 }
-/* line 578, sass/main.scss */
+/* line 583, sass/main.scss */
 .main .p-tile-paragraph {
   margin: 0;
   width: 70%;
   display: block;
   position: relative;
 }
-/* line 585, sass/main.scss */
+/* line 590, sass/main.scss */
 .main .image-auto-1 {
   background-image: url("../img/auto-1.jpg");
 }
-/* line 588, sass/main.scss */
+/* line 593, sass/main.scss */
 .main .image-auto-2 {
   background-image: url("../img/auto-2.jpg");
 }
-/* line 591, sass/main.scss */
+/* line 596, sass/main.scss */
 .main .image-auto-3 {
   background-image: url("../img/auto-3.jpg");
 }
-/* line 594, sass/main.scss */
+/* line 599, sass/main.scss */
 .main .image-auto-4 {
   background-image: url("../img/auto-4.jpg");
 }
-/* line 597, sass/main.scss */
+/* line 602, sass/main.scss */
 .main .for-margin {
   margin-top: 60px;
 }
-/* line 600, sass/main.scss */
-.main #delivery {
-  border-bottom-right-radius: 70% 70px;
-  border-bottom-left-radius: 70% 70px;
-}
 
-/* line 606, sass/main.scss */
+/* line 611, sass/main.scss */
 .footer {
   background-color: #696969;
   display: block;
@@ -834,55 +835,60 @@ input, a, img {
   padding: 30px 0 10px;
   color: #fff;
 }
-/* line 612, sass/main.scss */
+/* line 617, sass/main.scss */
 .footer .google-map {
   display: block;
   height: 400px;
   width: 100%;
   margin: 30px 0;
 }
-/* line 618, sass/main.scss */
+/* line 623, sass/main.scss */
 .footer .contact:hover .c-icon i {
   color: #f42908;
 }
-/* line 621, sass/main.scss */
+/* line 626, sass/main.scss */
 .footer .contact {
   display: block;
   min-height: 100px;
   padding: 10px 10px 25px;
   height: 100%;
 }
-/* line 627, sass/main.scss */
+/* line 632, sass/main.scss */
 .footer .c-icon {
   height: 30px;
   width: 30px;
   display: block;
   margin: 0 auto 5px;
 }
-/* line 632, sass/main.scss */
+/* line 637, sass/main.scss */
 .footer .c-icon i {
   width: 20px;
   text-align: center;
   font-size: 2em;
 }
-/* line 638, sass/main.scss */
+/* line 643, sass/main.scss */
 .footer .c-txt {
   display: block;
   height: 100%;
 }
-/* line 642, sass/main.scss */
+/* line 647, sass/main.scss */
 .footer .c-heder {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
-/* line 647, sass/main.scss */
+/* line 652, sass/main.scss */
 .footer .c-paragraph {
   color: #fff;
   text-align: center;
 }
+/* line 656, sass/main.scss */
+.footer .bottom-footer {
+  color: #bbb;
+  float: right;
+}
 
-/* line 652, sass/main.scss */
+/* line 661, sass/main.scss */
 .button {
   display: block;
   text-align: center;

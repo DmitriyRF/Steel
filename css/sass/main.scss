@@ -501,6 +501,11 @@ input, a, img{
 		margin-top: 40px;
 		display: block;
 	}
+	.correctness-price{
+		float: right;
+		display: inline-block;
+		margin: 1px 0 2px;
+	}
 	#steel{
 		.take-price{
 			display: block;
@@ -597,10 +602,10 @@ input, a, img{
 	.for-margin{
 		margin-top: 60px;
 	}
-	#delivery{
-		border-bottom-right-radius: 70% 70px;
-	    border-bottom-left-radius: 70% 70px;
-	}
+	// #delivery{
+	// 	border-bottom-right-radius: 70% 30px;
+	//     border-bottom-left-radius: 70% 30px;
+	// }
 
 }
 .footer{
@@ -647,6 +652,10 @@ input, a, img{
 	.c-paragraph{
 		color: #fff;
 		text-align: center;
+	}
+	.bottom-footer{
+		color: #bbb;
+		float: right;
 	}
 }
 .button{
