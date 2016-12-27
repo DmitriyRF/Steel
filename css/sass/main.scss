@@ -509,17 +509,34 @@ input, a, img{
 	#steel{
 		.take-price{
 			display: block;
-			margin-top: 100px;
+			margin-top: 130px;
 			text-align: center;
 			vertical-align: middle;
+			@media screen and (orientation: portrait) and (max-width: 767px)  { 
+				margin-top: 80px;
+			}
 			.link-to-doc{
 				max-width: 40%;	
+				display: block;	
 				margin: 20px auto;	
-				display: block;		
 			}
 			img{
 				max-width: 100%;
-				max-height: 300px;
+				max-height: 130px;
+				margin: 0px auto;
+			}
+		}
+		.add-gift{				
+			margin-top: 130px;
+			text-align: center;
+			vertical-align: middle;
+			display: block;
+			@media screen and (orientation: portrait) and (max-width: 767px)  { 
+				margin-top: 80px;
+			}
+			.glyphicon{
+				font-size: 40px;
+
 			}
 		}
 	}
