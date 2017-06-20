@@ -23,6 +23,18 @@ $(".navbar-collapse a").click(function() {
   }
 });
 
+//    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    // Эта функция делает анимацию при клике на ссылку
+    // Необходима отдельная библеотека
+    // $('a.js-link').bind('click', function(event) {
+    //     var $anchor = $(this);
+    //     $('html').stop().animate({
+    //         scrollTop: ($($anchor.attr('href')).offset().top - 5)
+    //     }, 1250, 'easeInOutExpo');
+    //     event.preventDefault();
+    // });
+
+
 //Smooth Scroll
   // $('a[href*="#"]:not([href="#"])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

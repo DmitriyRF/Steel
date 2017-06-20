@@ -158,9 +158,14 @@ $max-screen-width: (screen-0: 2600px,screen-1: 1900px, screen-2: 1440px, screen-
 		vertical-align: bottom;
 	}
 }
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
 html{
 	min-width: 320px;
-	// overflow-x: hidden;
+	user-select: none;
 }
 body{
 	font-family: "RobotoRegular", sans-serif;
@@ -171,6 +176,7 @@ body{
 	-webkit-font-smoothing: antialise;
 	letter-spacing: 1px;
 	font-size: 14px; 
+	margin-top: 50px;
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid{
@@ -274,7 +280,7 @@ input, a, img{
 		background-position: center center;
 		background-color: #fff;
 		background-size: cover;
-		margin-top: 50px;
+		// margin-top: 50px;
 		padding-bottom: 50px;
 		position: relative;
 		width: 100%;
@@ -474,9 +480,11 @@ input, a, img{
 //     color: #fff;
 // }
 .hr-width{
-	max-width: 70%;
+	// max-width: 70%;
 	max-width: 60vw;
-	margin: 20px auto 40px; 
+	margin: 20px auto 40px;
+	border-width: 3px;
+	max-width: 100px; 
 }
 .heder-of-section{
 	margin: 40px auto;
@@ -673,6 +681,7 @@ input, a, img{
 	.bottom-footer{
 		color: #bbb;
 		float: right;
+		user-select: none;
 	}
 }
 .button{
